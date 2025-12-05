@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Code Typing Game</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/themes/prism.min.css" rel="stylesheet" />
+</head>
+<body>
+  <h1>Code Syntax Typing Game</h1>
+  <div id="game">
+    <label for="difficulty">Difficulty:</label>
+    <select id="difficulty">
+  <option value="easy">Easy</option>
+  <option value="medium">Medium</option>
+  <option value="hard">Hard</option>
+</select>
+    <pre id="snippet" class="language-javascript"></pre>
+    <textarea id="input" placeholder="Type code here..." autofocus></textarea>
+    <div id="stats">
+      <span id="wpm">WPM: 0</span> | 
+      <span id="accuracy">Accuracy: 100%</span>
+    </div>
+    <button id="next" style="display:none;">Next Snippet</button>
+  </div>
+
+<div id="timer">Time left: <span id="time-left">30</span>s</div>
+
+  <h2>High Scores</h2>
+　<ul id="scoreboard"></ul>
+  
+
+
+
+<div id="username-form">
+  <label for="username">Enter your name:</label>
+  <input id="username" autofocus />
+  <button id="save-username">Start Game</button>
+</div>
+
+  
+  <script src="app.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/components/prism-python.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/components/prism-java.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/components/prism-javascript.min.js"></script>
+
+
+</body>
+</html>
